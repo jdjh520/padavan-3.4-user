@@ -63,8 +63,8 @@ getconfig(){
 	  cat > "$adg_file" <<-\EEE
 bind_host: 0.0.0.0
 bind_port: 3030
-auth_name: adguardhome
-auth_pass: adguardhome
+auth_name: admin
+auth_pass: admin
 language: zh-cn
 rlimit_nofile: 0
 dns:
