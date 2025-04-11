@@ -97,12 +97,12 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_FRPS=n" >> .config #内网穿透FRPS
         echo "CONFIG_FIRMWARE_INCLUDE_TUNSAFE=n" >> .config #TUNSAFE
         echo "CONFIG_FIRMWARE_INCLUDE_CADDYBIN=n" >> .config #size 13M 如不集成，从网上下载下来执行，不影响使用
-        echo "CONFIG_FIRMWARE_INCLUDE_ADGUARDHOME=n" >> .config #拦截广告，可选其他插件替代
+        echo "CONFIG_FIRMWARE_INCLUDE_ADGUARDHOME=y" >> .config #拦截广告，可选其他插件替代
         echo "CONFIG_FIRMWARE_INCLUDE_SRELAY=n" >> .config #srelay架设socket5代理
         echo "CONFIG_FIRMWARE_INCLUDE_ADBYBY=n" >> .config #adbyby plus+
         echo "CONFIG_FIRMWARE_INCLUDE_HTOP=n" >> .config #htop类似top命令
         #################### 以下集成到 Xiaomi-R3G #################################
-        echo "CONFIG_FIRMWARE_WEBUI_HIDE_VPN=n" >> .config #删除左侧导航栏VPN选项
+        echo "CONFIG_FIRMWARE_WEBUI_HIDE_VPN=y" >> .config #删除左侧导航栏VPN选项
         echo "CONFIG_FIRMWARE_INCLUDE_MINIDLNA=n" >> .config ### minidlna 1.3.3
         echo "CONFIG_FIRMWARE_INCLUDE_CADDY=n" >> .config #WEB服务及文件管理
         echo "CONFIG_FIRMWARE_INCLUDE_TRANSMISSION=n" >> .config ###TRANSMISSION 下载器
@@ -115,7 +115,7 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_DDNSTO=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_ALIDDNS=n" >> .config #阿里DDNS
         echo "CONFIG_FIRMWARE_INCLUDE_ZEROTIER=y" >> .config #zerotier ~1.3M
-        echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNS=y" >> .config #smartdns
+        echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNS=n" >> .config #smartdns
         #########################################################################################
         #自定义添加其它功能请参考源码configs/templates/目录下的config文件。按照上面的格式添加即可
         #格式如下：
